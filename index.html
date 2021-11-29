@@ -4,33 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music | Songs</title>
+    <title>Music | Home</title>
+    <link rel="stylesheet" href="./styles/common.css" />
 </head>
 
 <body>
-    <header>Header</header>
-    <nav>
-        <ul>
-            <li>
-                <a href="/index.html">Home</a>
-            </li>
-            <li>
-                <a href="/profile.html">Profile</a>
-            </li>
-            <li>
-                <a href="/subscription.html">Subscription</a>
-            </li>
-            <li>
-                <a href="/login.html">Logout</a>
-            </li>
-        </ul>
-    </nav>
-    <main>
-        <h1>
-            Songs
-        </h1>
-    </main>
-    <footer>Footer</footer>
+    <div id="wrapper">
+        <header>
+            <div>
+                Header
+            </div>
+            <a href="#" id="menu">
+                <img src="./assets/icons/menu.svg" />
+            </a>
+        </header>
+        <nav id="navigationBar">
+            <a href="#" id="close_drawer">
+                <img src="./assets/icons/close.svg" />
+            </a>
+            <ul>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/profile.html">Profile</a>
+                </li>
+                <li>
+                    <a href="/subscription.html">Subscription</a>
+                </li>
+                <li>
+                    <a href="/login.html">Logout</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h1>
+                Songs
+            </h1>
+        </main>
+        <aside>
+            Aside
+        </aside>
+        <footer>Footer</footer>
+    </div>
+    <script type="text/javascript" src="scripts/drawer.js"></script>
 </body>
 
 </html>
