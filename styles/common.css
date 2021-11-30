@@ -12,9 +12,11 @@ body {
   color: #fff;
 }
 
-header,
+ul {
+  list-style: none;
+}
+
 main,
-footer,
 aside {
   border: 1px solid #fff;
 }
@@ -25,10 +27,32 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-left: 20px;
+  background-color: #000;
 }
 
-header > div {
-  min-width: 150px;
+header ul {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  font-size: 16px;
+}
+
+header ul li {
+  list-style: none;
+  padding: 10px 20px 0px 0px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header ul li a:hover {
+  color: #1ed760;
+}
+
+#header-menu ul {
+  display: none;
 }
 
 nav {
@@ -63,23 +87,115 @@ nav ul li {
   padding: 10px;
 }
 
+.active,
+nav ul li:hover {
+  background: #f0f0f0;
+}
+
 nav ul li a {
   text-decoration: none;
   color: #000;
 }
 
 main {
+  min-height: 500px;
 }
 
 aside {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #000;
+}
+
+#site-links {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#site-links dl {
+  width: 300px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#site-links dt {
+  color: #919496;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+}
+
+#site-links dd {
+  padding: 10px 0px;
+  font-size: 16px;
+}
+
+#site-links dd a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#site-links dd a:hover {
+  color: #1ed760;
+}
+
+#site-policy {
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  color: #919496;
+  align-items: end;
+}
+
+#other-links {
+  display: none;
+}
+
+#other-links ul {
+  display: flex;
+}
+
+#other-links ul li {
+  margin-right: 20px;
+}
+
+#other-links ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#other-links ul li a:hover {
+  color: #1ed760;
+  text-decoration: underline;
+}
+
+#site-policy > section:not(#other-links) {
+  text-align: right;
+}
+
+#site-policy > section:not(#other-links) ul li {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#site-policy > section:not(#other-links) ul li img {
+  height: 12px;
+  margin-right: 7px;
 }
 
 @media only screen and (min-width: 600px) {
   header {
     grid-area: header;
+  }
+
+  #header-menu ul {
+    display: flex;
   }
 
   #menu {
@@ -108,12 +224,32 @@ footer {
   footer {
     grid-area: footer;
   }
+
   #wrapper {
     display: grid;
     grid-template:
       "header header"
       "nav main"
-      "aside aside"
+      "nav aside"
       "footer footer" / 200px;
+  }
+
+  #other-links {
+    display: inline-block;
+  }
+
+  #site-links dl {
+    text-align: left;
+    width: auto;
+  }
+
+  #site-policy {
+    justify-content: space-between;
+  }
+
+  #site-policy > section:not(#other-links) ul li {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
   }
 }
