@@ -1,0 +1,82 @@
+
+
+.login-container{
+    position: relative;
+    border-radius: 5px;
+    padding: 20px 0 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*Style for inputs and buttons*/
+input,
+.btn{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration: none;
+
+}
+input:hover,
+.btn:hover{
+    opacity: 1;
+
+}
+/*Applying colour to Fb, Apple and Google */
+.fbbtn{
+    background-color:#3b5998;
+    color: white;
+
+}
+.applebtn{
+    background-color:black;
+    
+
+}
+.googlebtn{
+    background-color: white;
+    color: gray;
+    border-color: gray;
+
+}
+/*Style the submit button*/
+ input[type=submit]{
+     background-color: #4caf50;
+     color: white;
+     cursor: pointer;
+ }
+ input[type=submit]:hover{
+     background-color: #45a049;   
+ }
+ /*style for horizontal line*/
+ .hr-line{
+     position: absolute;
+     border: 2px solid #ddd;
+     width: 250px;
+ }
+ .hr-inner-text{
+     position: absolute;
+     transform: translate(-50%, -50%);
+     background-color: #f1f1f1;
+     border: 1px solid #ccc;
+     border-radius: 50%;
+     padding: 8px 10px;
+ }
+
+
+ /* Responsive  */
+
+ @media screen and (max-width:650px) {
+     
+ }

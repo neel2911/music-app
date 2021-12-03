@@ -4,17 +4,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music | Login</title>
+    <title>Music | Home</title>
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="/styles/login.css">
 </head>
 
 <body>
-    <header>Header</header>
-    <nav>Navigation</nav>
-    <main>
-        <h1>Login</h1>
-        <a href="/index.html">Login</a>
-    </main>
-    <footer>Footer</footer>
+    <div id="wrapper">
+        <header>
+            <div>
+                Header
+            </div>
+            <div id="header-menu">
+                <a href="#" id="menu">
+                    <img src="./assets/icons/menu.svg" />
+                </a>
+                <ul>
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/profile.html">Profile</a>
+                    </li>
+                    <li>
+                        <a href="/subscription.html">Subscription</a>
+                    </li>
+                    <li>
+                        <a href="/login.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+
+        </header>
+        <nav id="navigationBar">
+            <a href="#" id="close_drawer">
+                <img src="./assets/icons/close.svg" />
+            </a>
+            <ul>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/profile.html">Profile</a>
+                </li>
+                <li>
+                    <a href="/subscription.html">Subscription</a>
+                </li>
+                <li>
+                    <a href="/login.html">Logout</a>
+                </li>
+            </ul>
+        </nav>
+        
+<main>
+    
+    <div class="login-container">
+        <h2>To continue, log in to Soundtube </h2>
+
+        <a href="#" class="fbbtn">
+            Login with Facebook
+             </a>
+
+              <a href="#" class="applebtn">
+              Login with Apple
+              </a>
+
+              <a href="#" class="googlebtn">
+              Login with Google
+              </a>
+
+              <div class="hr-line">
+                <span class="hr-inner-text">or</span>
+                </div>
+
+        <form action="" method="POST">
+                 <label >Email address or username</label>
+                 <input type="text" name="username" placeholder="Email address or username" required> 
+                 <label >Password</label>
+                 <input type="password" name="Password" placeholder="Password" required> 
+                 <a href="#">Forgot your password?</a>
+                 <input type="checkbox" name="Remember me">Remember me
+                 <input type="submit" value="LOG IN">
+
+         <a>Don't have an account?</a>
+         <input type="submit" value="SIGN UP FOR SOUND TUBE">
+
+        </form>
+    </div>
+ 
+</main>
+        
+        <footer>
+            <div id="site-links">
+                <dl>
+                    <dt>COMPANY</dt>
+                    <dd><a href="#">About</a></dd>
+                    <dd><a href="#">Jobs</a></dd>
+                    <dd><a href="#">For the Record</a></dd>
+
+                </dl>
+                <dl>
+                    <dt>COMMUNITIES</dt>
+                    <dd><a href="#">For Artists</a></dd>
+                    <dd><a href="#">Developers</a></dd>
+                    <dd><a href="#">Advertising</a></dd>
+                    <dd><a href="#">Investors</a></dd>
+                    <dd><a href="#">Vendors</a></dd>
+
+                </dl>
+                <dl>
+                    <dt>USEFUL LINKS</dt>
+                    <dd><a href="#">Support</a></dd>
+                    <dd><a href="#">Web Player</a></dd>
+                    <dd><a href="#">Free Mobile App</a></dd>
+                </dl>
+            </div>
+            <div id="site-policy">
+                <section id="other-links">
+                    <ul>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Privacy Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">About ads</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <ul>
+                        <li>
+                            <img src="./assets/icons/location.svg" />
+                            Canada
+                        </li>
+                        <li>
+                            &copy; 2021 Soundtube
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="scripts/drawer.js"></script>
 </body>
 
 </html>
