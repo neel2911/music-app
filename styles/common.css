@@ -16,12 +16,6 @@ ul {
   list-style: none;
 }
 
-.vl {
-  border-left: 2px solid #fff;
-  height: 18px;
-  display: inline-block;
-}
-
 header {
   height: 70px;
   display: flex;
@@ -47,12 +41,20 @@ header ul li {
   padding: 0px 20px 0px 20px;
 }
 
+header ul li:last-child {
+  border-left: 2px solid #ffffff;
+}
+
 header ul li a {
   text-decoration: none;
   color: #fff;
 }
 
 header ul li a:hover {
+  color: #1ed760;
+}
+
+.menu-active {
   color: #1ed760;
 }
 
