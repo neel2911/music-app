@@ -4,33 +4,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music | Profile</title>
+    <title>Soundtube | Profile</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/profile.css" />
 </head>
 
 <body>
-    <header>Header</header>
-    <nav>
-        <ul>
-            <li>
-                <a href="/index.html">Home</a>
-            </li>
-            <li>
-                <a href="/profile.html">Profile</a>
-            </li>
-            <li>
-                <a href="/subscription.html">Subscription</a>
-            </li>
-            <li>
-                <a href="/login.html">Logout</a>
-            </li>
-        </ul>
-    </nav>
-    <main>
-        <h1>
-            Profile
-        </h1>
-    </main>
-    <footer>Footer</footer>
+    <div id="wrapper">
+        <header>
+            <div>
+                <a href="/index.html">
+                    <img src="./assets/logo/brand.png" height="45" />
+                </a>
+            </div>
+            <div id="header-menu">
+                <a href="#" id="menu">
+                    <img src="./assets/icons/menu.svg" />
+                </a>
+                <ul>
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/playlist.html">Playlist</a>
+                    </li>
+                    <li>
+                        <a href="/songs.html">Songs</a>
+                    </li>
+                    <li>
+                        <a href="/profile.html" class="menu-active">Profile</a>
+                    </li>
+                    <li>
+                        <a href="/login.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+
+        </header>
+        <nav id="navigationBar">
+            <a href="#" id="close_drawer">
+                <img src="./assets/icons/close.svg" />
+            </a>
+
+            <ul>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/playlist.html">Playlist</a>
+                </li>
+                <li>
+                    <a href="/songs.html">Songs</a>
+                </li>
+                <li>
+                    <a href="/profile.html" class="menu-active">Profile</a>
+                </li>
+                <li>
+                    <a href="#">Account overview</a>
+                </li>
+                <li>
+                    <a href="#">Edit Profile</a>
+                </li>
+                <li>
+                    <a href="#">Change password</a>
+                </li>
+                <li>
+                    <a href="#">Notification setting</a>
+                </li>
+                <li>
+                    <a href="#">Privacy setting</a>
+                </li>
+                <li>
+                    <a href="#">Recover playlist</a>
+                </li>
+                <li>
+                    <a href="#">Apps</a>
+                </li>
+
+                <li>
+                    <a href="/login.html">Logout</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <article>
+                <div class="promotion-section">
+                    <h1>
+                        Get 3 months of Premium for free
+                    </h1>
+                    <h2>
+                        Enjoy ad-free music listening, offline playback, and more. Cancel anytime.
+                    </h2>
+                    <div class="btn-wrapper">
+                        <button class="btn">
+                            GET 3 MONTHS FREE
+                        </button>
+                    </div>
+                    <p>
+                        Individual plan only. $9.99/month after. Terms and conditions apply. Open only to users who
+                        haven't
+                        already tried Premium. Offer ends 31 December 2021.
+                    </p>
+                </div>
+                <img src="assets/images/profile/holiday.jpeg" height="500" />
+            </article>
+            <div class="profile-section">
+                <div class="profile-wrapper">
+                    <div class="profile-menu">
+                        <div class="profile-pic">
+                            <img src="assets/icons/account.svg" height="100" />
+                        </div>
+                        <ul>
+                            <li class="active-menu">
+                                <img src="assets/icons/home.svg" />
+                                <span>Account overview</span>
+                            </li>
+                            <li>
+                                <img src="assets/icons/edit.svg" />
+                                <span>Edit Profile</span>
+                            </li>
+                            <li>
+                                <img src="assets/icons/lock.svg" />
+                                <span>Change password</span>
+                            </li>
+                            <li>
+                                <img src="assets/icons/notifications.svg" />
+                                <span>Notification setting</span>
+                            </li>
+                            <li>
+                                <img src="assets/icons/lock.svg" />
+                                <span>Privacy setting</span>
+                            </li>
+                            <li>
+                                <img src="assets/icons/update.svg" />
+                                <span>Recover playlist</span>
+                            </li>
+                            <li>
+                                <img src="assets/icons/extension.svg" />
+                                <span>Apps</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="profile-info">
+                        <section>
+                            <h1>Account overview</h1>
+                            <h2>Profile</h2>
+                            <table cellspacing=0>
+                                <tr>
+                                    <th>Username</th>
+                                    <td>neel5302krupashreyansh</td>
+                                </tr>
+                                <tr>
+                                    <th>Email</th>
+                                    <td>neel5302@conestogac.on.ca</td>
+                                </tr>
+                                <tr>
+                                    <th>Date of birth</th>
+                                    <td>November 29, 1994</td>
+                                </tr>
+                                <tr>
+                                    <th>Country or region</th>
+                                    <td>Canada</td>
+                                </tr>
+                            </table>
+                            <button class="btn">
+                                Edit profile
+                            </button>
+                        </section>
+                        <section>
+                            <h3>Your plan</h3>
+                            <div class="plan-section">
+                                <div class="plan-title">
+                                    Soundtube Free
+                                </div>
+                                <div class="plan-body">
+                                    <p>
+                                        Play music in shuffle mode only, with ads.
+                                    </p>
+                                    <hr />
+                                    <h2>
+                                        Free
+                                    </h2>
+                                </div>
+                            </div>
+                            <button class="btn">Join Premium</button>
+                        </section>
+                        <section>
+                            <h3>
+                                Sign out everywhere
+                            </h3>
+                            <p>
+                                This logs you out of Soundtube everywhere you’re logged in, including the mobile,
+                                tablet, web player and desktop apps. This doesn't include partner devices (e.g.
+                                speakers, games consoles, and TVs), so for those go to your apps page and choose REMOVE
+                                ACCESS.
+                            </p>
+                            <div class="note">
+                                Note: It can take up to 1 hour for sign out to take effect on the web player.
+                            </div>
+                            <button class="btn">
+                                Sign out everywhere
+                            </button>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="site-links">
+                <dl>
+                    <dt>COMPANY</dt>
+                    <dd><a href="#">About</a></dd>
+                    <dd><a href="#">Jobs</a></dd>
+                    <dd><a href="#">For the Record</a></dd>
+
+                </dl>
+                <dl>
+                    <dt>COMMUNITIES</dt>
+                    <dd><a href="#">For Artists</a></dd>
+                    <dd><a href="#">Developers</a></dd>
+                    <dd><a href="#">Advertising</a></dd>
+                    <dd><a href="#">Investors</a></dd>
+                    <dd><a href="#">Vendors</a></dd>
+
+                </dl>
+                <dl>
+                    <dt>USEFUL LINKS</dt>
+                    <dd><a href="#">Support</a></dd>
+                    <dd><a href="#">Web Player</a></dd>
+                    <dd><a href="#">Free Mobile App</a></dd>
+                </dl>
+            </div>
+            <div id="site-policy">
+                <section id="other-links">
+                    <ul>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Privacy Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">About ads</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <ul>
+                        <li>
+                            <img src="./assets/icons/location.svg" />
+                            Canada
+                        </li>
+                        <li>
+                            &copy; 2021 Soundtube
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="scripts/drawer.js"></script>
 </body>
 
 </html>

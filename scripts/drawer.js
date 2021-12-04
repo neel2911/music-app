@@ -6,7 +6,7 @@ const $ = function (selector) {
 const openNav = function () {
   const navEl = $("navigationBar");
   navEl.style.transition = "0.5s";
-  navEl.style.width = "150px";
+  navEl.style.width = "200px";
 };
 
 /* Set the width of the side navigation to 0 */

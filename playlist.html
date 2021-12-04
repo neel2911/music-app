@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soundtube | Login</title>
+    <title>Soundtube | Playlist</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="./styles/common.css" />
-    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/playlist.css" />
 </head>
 
 <body>
     <div id="wrapper">
         <header>
             <div>
-                Header
+                <a href="/index.html">
+                    <img src="./assets/logo/brand.png" height="45" />
+                </a>
             </div>
             <div id="header-menu">
                 <a href="#" id="menu">
@@ -25,17 +27,19 @@
                         <a href="/index.html">Home</a>
                     </li>
                     <li>
+                        <a href="/playlist.html" class="menu-active">Playlist</a>
+                    </li>
+                    <li>
+                        <a href="/songs.html">Songs</a>
+                    </li>
+                    <li>
                         <a href="/profile.html">Profile</a>
                     </li>
                     <li>
-                        <a href="/subscription.html">Subscription</a>
-                    </li>
-                    <li>
-                        <a href="/login.html">Logout</a>
+                        <a href="/login.html">Login</a>
                     </li>
                 </ul>
             </div>
-
         </header>
         <nav id="navigationBar">
             <a href="#" id="close_drawer">
@@ -46,56 +50,24 @@
                     <a href="/index.html">Home</a>
                 </li>
                 <li>
+                    <a href="/playlist.html" class="menu-active">Playlist</a>
+                </li>
+                <li>
+                    <a href="/songs.html">Songs</a>
+                </li>
+                <li>
                     <a href="/profile.html">Profile</a>
                 </li>
                 <li>
-                    <a href="/subscription.html">Subscription</a>
-                </li>
-                <li>
-                    <a href="/login.html">Logout</a>
+                    <a href="/login.html">Login</a>
                 </li>
             </ul>
         </nav>
-        
-<main>
-    
-    
-    <div class="login-container">
-        <h2>To continue, log in to Soundtube </h2>
-
-        <a href="#" class="social-btn fbbtn">
-            <img src="./assets/icons/fb.svg" /> Login with Facebook
-             </a>
-
-              <a href="#" class="social-btn applebtn">
-                <img src="./assets/icons/apple.svg" />Login with Apple
-              </a>
-
-              <a href="#" class="social-btn googlebtn">
-                <img src="./assets/icons/google.svg" /> Login with Google
-              </a>
-
-              <div class="hr-line">
-                <span class="hr-inner-text">or</span>
-                </div>
-
-                <form action="" method="POST">
-                    <label>Email address or username</label>
-                    <input type="text" name="username" placeholder="Email address or username" required>
-                    <label>Password</label>
-                    <input type="password" name="Password" placeholder="Password" required>
-                    <a href="#">Forgot your password?</a>
-                    <input type="checkbox" name="Remember me">Remember me
-                    <input type="submit" value="LOG IN">
-
-                    <a>Don't have an account?</a>
-                    <input type="submit" value="SIGN UP FOR SOUND TUBE">
-
-                </form>
-            </div>
-
+        <main>
         </main>
-
+        <aside>
+            Aside
+        </aside>
         <footer>
             <div id="site-links">
                 <dl>

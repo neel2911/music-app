@@ -16,11 +16,6 @@ ul {
   list-style: none;
 }
 
-main,
-aside {
-  border: 1px solid #fff;
-}
-
 header {
   height: 70px;
   display: flex;
@@ -28,6 +23,10 @@ header {
   align-items: center;
   padding-left: 20px;
   background-color: #000;
+}
+
+header div:not(#header-menu) a {
+  display: inline-block;
 }
 
 header ul {
@@ -39,7 +38,11 @@ header ul {
 
 header ul li {
   list-style: none;
-  padding: 10px 20px 0px 0px;
+  padding: 0px 20px 0px 20px;
+}
+
+header ul li:last-child {
+  border-left: 2px solid #ffffff;
 }
 
 header ul li a {
@@ -48,6 +51,10 @@ header ul li a {
 }
 
 header ul li a:hover {
+  color: #1ed760;
+}
+
+.menu-active {
   color: #1ed760;
 }
 
@@ -107,19 +114,18 @@ aside {
 footer {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 20px 50px;
   background-color: #000;
 }
 
 #site-links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: left;
   flex-wrap: wrap;
 }
 
 #site-links dl {
   width: 300px;
-  text-align: center;
   margin-top: 30px;
 }
 
@@ -148,7 +154,7 @@ footer {
 #site-policy {
   display: flex;
   font-size: 12px;
-  justify-content: center;
+  justify-content: right;
   color: #919496;
   align-items: end;
 }
@@ -180,7 +186,7 @@ footer {
 }
 
 #site-policy > section:not(#other-links) ul li {
-  text-align: center;
+  text-align: left;
   margin-top: 10px;
 }
 
@@ -238,6 +244,10 @@ footer {
     display: inline-block;
   }
 
+  #site-links {
+    justify-content: space-evenly;
+  }
+
   #site-links dl {
     text-align: left;
     width: auto;
@@ -250,6 +260,7 @@ footer {
   #site-policy > section:not(#other-links) ul li {
     display: flex;
     justify-content: right;
+    text-align: center;
     margin-top: 10px;
   }
 }

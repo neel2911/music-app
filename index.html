@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music | Home</title>
+    <title>Soundtube | Home</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
 </head>
 
 <body>
     <div id="wrapper">
         <header>
             <div>
-                Header
+                <a href="/index.html">
+                    <img src="./assets/logo/brand.png" height="45" />
+                </a>
             </div>
             <div id="header-menu">
                 <a href="#" id="menu">
@@ -20,20 +24,22 @@
                 </a>
                 <ul>
                     <li>
-                        <a href="/index.html">Home</a>
+                        <a href="/index.html" class="menu-active">Home</a>
+                    </li>
+                    <li>
+                        <a href="/playlist.html">Playlist</a>
+                    </li>
+                    <li>
+                        <a href="/songs.html">Songs</a>
                     </li>
                     <li>
                         <a href="/profile.html">Profile</a>
                     </li>
                     <li>
-                        <a href="/subscription.html">Subscription</a>
-                    </li>
-                    <li>
-                        <a href="/login.html">Logout</a>
+                        <a href="/login.html">Login</a>
                     </li>
                 </ul>
             </div>
-
         </header>
         <nav id="navigationBar">
             <a href="#" id="close_drawer">
@@ -41,27 +47,87 @@
             </a>
             <ul>
                 <li>
-                    <a href="/index.html">Home</a>
+                    <a href="/index.html" class="menu-active">Home</a>
+                </li>
+                <li>
+                    <a href="/playlist.html">Playlist</a>
+                </li>
+                <li>
+                    <a href="/songs.html">Songs</a>
                 </li>
                 <li>
                     <a href="/profile.html">Profile</a>
                 </li>
                 <li>
-                    <a href="/subscription.html">Subscription</a>
-                </li>
-                <li>
-                    <a href="/login.html">Logout</a>
+                    <a href="/login.html">Login</a>
                 </li>
             </ul>
         </nav>
         <main>
-            <h1>
-                Songs
-            </h1>
+            <section class="Home_Section1" id="Home">
+                <div>
+                    <p id="p_sec1">SPOTIFY PREMIUM</p>
+                </div>
+
+                <div>
+                    <h1 id="h1_sec1">Get 3 months of Premium for free</h1>
+                </div>
+
+                <div>
+                    <h2 id="h2_sec1">Enjoy ad-free music listening, offline playback, and more. Cancel anytime.</h2>
+                </div>
+
+                <div><button type="button" id="btn_sec1"><span id="Sec1_S">Get 3 months free</span></button></div>
+
+                <div>
+                    <p id="sec1_p">Individual plan only. $9.99/month after. Terms and conditions apply. Open only to
+                        users who haven't already tried Premium. Offer ends 31 December 2021.</p>
+                </div>
+
+                <div><img src="assets/images/Home/Sec1.png" alt="Music" class="image"></div>
+            </section>
+
+            <section class="Home_Section2">
+
+                <div>
+                    <p id="p_sec2">#SPOTIFYWRAPPED</p>
+                </div>
+                <div>
+                    <h1 id="h1_sec2">
+                        2021 Wrapped is ready.
+                    </h1>
+                </div>
+                <div>
+                    <h2 id="h2_sec2">
+                        But it’s only available in the Spotify app. Download it now to discover more.
+                    </h2>
+                </div>
+                <div>
+                    <button type="button" id="btn_sec2"><span id="Sec2_S">Download Spotify</span></button>
+                </div>
+                <div>
+                    <p id="sec2_p">
+                        Listen to 2021 highlights here.
+                    </p>
+                </div>
+            </section>
+            <section class="Home_Section3">
+                <div>
+                    <p id="Sec3_p"> SPOTIFY FREE</p>
+                </div>
+                <div>
+                    <h2 id="Sec3_h2">Listening is everything</h2>
+                </div>
+                <div>
+                    <h1 id="Sec3_h1">Millions of songs and podcasts. No credit card needed</h1>
+                </div>
+                <button type="btn" id="btn_sec3"><span id="Sec3_S">GET SPOTIFY FREE</span></button>
+            </section>
         </main>
-        <aside>
+        <!----      <aside>
             Aside
-        </aside>
+        </aside> --->
+
         <footer>
             <div id="site-links">
                 <dl>
