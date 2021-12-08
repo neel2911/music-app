@@ -1,21 +1,11 @@
-
-
 .login-container{
-    position: relative;
-    border-radius: 5px;
-    padding: 20px 0 30px;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+    display: grid;
 }
 h2{
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;   
 }
 /*Style for inputs and buttons*/
-input,
-.btn{
+input{
     width: 100%;
     padding: 12px;
     border: none;
@@ -26,14 +16,19 @@ input,
     font-size: 18px;
     line-height: 20px;
     text-decoration: none;
-
 }
-input:hover,
-.btn:hover{
+input:hover
+{
     opacity: 1;
 
 }
 /*Applying colour to Fb, Apple and Google */
+.social-btn{
+    color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 4px;
+}
 .fbbtn{
     background-color:#3b5998;
     color: white;
