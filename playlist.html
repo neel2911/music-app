@@ -13,34 +13,63 @@
 <body>
     <div id="wrapper">
         <header>
-            <div>
-                <a href="/index.html">
+            <div id="brand-section">
+                <a href="/index.html" class="brand-logo">
                     <img src="./assets/logo/brand.png" height="45" />
                 </a>
+                <button class="btn tool-btn">
+                    <span>
+                        <img src="./assets/icons/chevron_left.svg" />
+                    </span>
+                </button>
+                <button class="btn tool-btn">
+                    <span>
+                        <img src="./assets/icons/chevron_right.svg" />
+                    </span>
+                </button>
+                <div class="search-input">
+                    <input type="text" placeholder="Search for any course" />
+                </div>
             </div>
             <div id="header-menu">
                 <a href="#" id="menu">
                     <img src="./assets/icons/menu.svg" />
                 </a>
-                <ul>
-                    <li>
-                        <a href="/index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="/playlist.html" class="menu-active">Playlist</a>
-                    </li>
-                    <li>
-                        <a href="/songs.html">Songs</a>
-                    </li>
-                    <li>
-                        <a href="/profile.html">Profile</a>
-                    </li>
-                    <li>
-                        <a href="/login.html">Login</a>
-                    </li>
-                </ul>
+                <button class="btn upgrade">
+                    Upgrade
+                </button>
+                <button class="btn user-profile">
+                    <span>
+                        <img src="./assets/icons/person.svg" />
+                    </span>
+                    Neel Patel
+                </button>
             </div>
         </header>
+        <nav>
+            <div>
+                <a href="/index.html">
+                    <img src="./assets/logo/brand.png" height="45" />
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li class="active">
+                    <a href="/playlist.html" class="menu-active">Playlist</a>
+                </li>
+                <li>
+                    <a href="/songs.html">Songs</a>
+                </li>
+                <li>
+                    <a href="/profile.html">Profile</a>
+                </li>
+                <li>
+                    <a href="/login.html">Logout</a>
+                </li>
+            </ul>
+        </nav>
         <nav id="navigationBar">
             <a href="#" id="close_drawer">
                 <img src="./assets/icons/close.svg" />
@@ -64,10 +93,139 @@
             </ul>
         </nav>
         <main>
+            <section class="playlist-title-section">
+                <h1>Hello Neel</h1>
+                <div class="playlist-wrapper">
+                    <div class="popular-playlist">
+                        <img src="assets/images/songs/main_icon.jpeg" height="80" />
+                        <span>All time hit international</span>
+                        <img src="assets/icons/play_main_circle.svg" height="50">
+                    </div>
+                    <div class="popular-playlist">
+                        <img src="assets/images/songs/main_icon.jpeg" height="80" />
+                        <span>All time hit international</span>
+                        <img src="assets/icons/play_main_circle.svg" height="50">
+                    </div>
+                    <div class="popular-playlist">
+                        <img src="assets/images/songs/main_icon.jpeg" height="80" />
+                        <span>All time hit international</span>
+                        <img src="assets/icons/play_main_circle.svg" height="50">
+                    </div>
+                    <div class="popular-playlist">
+                        <img src="assets/images/songs/main_icon.jpeg" height="80" />
+                        <span>All time hit international</span>
+                        <img src="assets/icons/play_main_circle.svg" height="50">
+                    </div>
+                    <div class="popular-playlist">
+                        <img src="assets/images/songs/main_icon.jpeg" height="80" />
+                        <span>All time hit international</span>
+                        <img src="assets/icons/play_main_circle.svg" height="50">
+                    </div>
+                    <div class="popular-playlist">
+                        <img src="assets/images/songs/main_icon.jpeg" height="80" />
+                        <span>All time hit international</span>
+                        <img src="assets/icons/play_main_circle.svg" height="50">
+                    </div>
+                </div>
+
+            </section>
+            <section class="playlist-body-section">
+                <h1>Episodes for you</h1>
+                <div class="other-playlist-wrapper">
+                    <div class="other-playlist">
+                        <div class="image-wrapper">
+                            <img src="assets/images/songs/main_icon.jpeg" height="150" />
+                        </div>
+                        <div>
+                            <div>
+                                All time hit international
+                            </div>
+                            <div>
+                                Soundtube Wrapped presents the songs that you loved most this year.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-playlist">
+                        <div class="image-wrapper">
+                            <img src="assets/images/songs/main_icon.jpeg" height="150" />
+                        </div>
+                        <div>
+                            <div>
+                                All time hit international
+                            </div>
+                            <div>
+                                Soundtube Wrapped presents the songs that you loved most this year.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-playlist">
+                        <div class="image-wrapper">
+                            <img src="assets/images/songs/main_icon.jpeg" height="150" />
+                        </div>
+                        <div>
+                            <div>
+                                All time hit international
+                            </div>
+                            <div>
+                                Soundtube Wrapped presents the songs that you loved most this year.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-playlist">
+                        <div class="image-wrapper">
+                            <img src="assets/images/songs/main_icon.jpeg" height="150" />
+                        </div>
+                        <div>
+                            <div>
+                                All time hit international
+                            </div>
+                            <div>
+                                Soundtube Wrapped presents the songs that you loved most this year.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-playlist">
+                        <div class="image-wrapper">
+                            <img src="assets/images/songs/main_icon.jpeg" height="150" />
+                        </div>
+                        <div>
+                            <div>
+                                All time hit international
+                            </div>
+                            <div>
+                                Soundtube Wrapped presents the songs that you loved most this year.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-playlist">
+                        <div class="image-wrapper">
+                            <img src="assets/images/songs/main_icon.jpeg" height="150" />
+                        </div>
+                        <div>
+                            <div>
+                                All time hit international
+                            </div>
+                            <div>
+                                Soundtube Wrapped presents the songs that you loved most this year.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-playlist">
+                        <div class="image-wrapper">
+                            <img src="assets/images/songs/main_icon.jpeg" height="150" />
+                        </div>
+                        <div>
+                            <div>
+                                All time hit international
+                            </div>
+                            <div>
+                                Soundtube Wrapped presents the songs that you loved most this year.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
-        <aside>
-            Aside
-        </aside>
         <footer>
             <div id="site-links">
                 <dl>
