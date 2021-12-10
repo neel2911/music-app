@@ -14,7 +14,9 @@
     <div id="wrapper">
         <header>
             <div>
-                Header
+                <a href="./index.html">
+                    <img src="./assets/logo/brand.png" height="45" />
+                </a>
             </div>
             <div id="header-menu">
                 <a href="#" id="menu">
@@ -22,79 +24,84 @@
                 </a>
                 <ul>
                     <li>
-                        <a href="/index.html">Home</a>
+                        <a href="./index.html" >Home</a>
                     </li>
                     <li>
-                        <a href="/profile.html">Profile</a>
+                        <a href="./playlist.html">Playlist</a>
                     </li>
                     <li>
-                        <a href="/subscription.html">Subscription</a>
+                        <a href="./songs.html">Songs</a>
                     </li>
                     <li>
-                        <a href="/login.html">Logout</a>
+                        <a href="./profile.html">Profile</a>
+                    </li>
+                    <li>
+                        <a href="./login.html" class="menu-active">Login</a>
                     </li>
                 </ul>
             </div>
-
         </header>
-        <nav id="navigationBar">
-            <a href="#" id="close_drawer">
-                <img src="./assets/icons/close.svg" />
-            </a>
-            <ul>
-                <li>
-                    <a href="/index.html">Home</a>
-                </li>
-                <li>
-                    <a href="/profile.html">Profile</a>
-                </li>
-                <li>
-                    <a href="/subscription.html">Subscription</a>
-                </li>
-                <li>
-                    <a href="/login.html">Logout</a>
-                </li>
-            </ul>
-        </nav>
-        
-<main>
-    
-    
+
+       
+                
+                   
+  
     <div class="login-container">
         <h2>To continue, log in to Soundtube </h2>
 
-        <a href="#" class="social-btn fbbtn">
-            <img src="./assets/icons/fb.svg" /> Login with Facebook
-             </a>
+               <a href="#" button class="social-btn fbbtn">
+                <img src="./assets/icons/fab.svg" /> Login with Facebook
+                </button></a>
 
-              <a href="#" class="social-btn applebtn">
+                <a href="#" button class="social-btn applebtn">
                 <img src="./assets/icons/apple.svg" />Login with Apple
-              </a>
+                </button></a>
 
-              <a href="#" class="social-btn googlebtn">
+                <a href="#" button class="social-btn googlebtn">
                 <img src="./assets/icons/google.svg" /> Login with Google
-              </a>
-
-              <div class="hr-line">
+                </button></a>
+               
+         <div class="hr-line">
                 <span class="hr-inner-text">or</span>
-                </div>
+        </div>
 
                 <form action="" method="POST">
-                    <label>Email address or username</label>
+                   
+                    <label for="email" class="label">Email address or username</label>
                     <input type="text" name="username" placeholder="Email address or username" required>
-                    <label>Password</label>
+                
+                
+                    <label for="password" class="label">Password</label>
                     <input type="password" name="Password" placeholder="Password" required>
-                    <a href="#">Forgot your password?</a>
-                    <input type="checkbox" name="Remember me">Remember me
-                    <input type="submit" value="LOG IN">
+                    
 
-                    <a>Don't have an account?</a>
-                    <input type="submit" value="SIGN UP FOR SOUND TUBE">
+                    
+                    <a href="#" class="text">Forgot your password?</a>
+                    
+                    <table>
+                        <tr>
+                            <td><input type="checkbox" name="Remember me" class="checkbox"></td>
+                                <td> <label for="remember me" class="boxtext">Remember me</label></td>
+                                <td> <a href="#" button class="social-btn l-btn">
+                                    Log In
+                                    </button></a></td>
+                        </tr>
+                    </table>
+                    <div class="hr-line"></div>
+
+                    <h3>Don't have an account?</h3>
+
+                    
+
+                    <a href="#" button class="social-btn googlebtn s-btn">
+                        Sign up for Soundtube
+                                  </button></a>
+                    
 
                 </form>
             </div>
-
-        </main>
+      
+    
 
         <footer>
             <div id="site-links">
