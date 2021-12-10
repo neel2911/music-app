@@ -449,7 +449,7 @@ footer {
     position: fixed;
     left: 200px;
     right: 0;
-    background-color: #121212;
+    background-color: #12121221;
   }
 
   header div:not(#header-menu) a {
