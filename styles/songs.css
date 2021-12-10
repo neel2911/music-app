@@ -149,6 +149,11 @@ nav:not(#navigationBar) > div {
 
 nav:not(#navigationBar) ul li a {
   color: #ffffff;
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  margin-left: 20px;
+  line-height: 2.5;
 }
 
 nav:not(#navigationBar) ul li:hover a {

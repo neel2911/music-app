@@ -149,6 +149,11 @@ nav:not(#navigationBar) > div {
 
 nav:not(#navigationBar) ul li a {
   color: #ffffff;
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  margin-left: 20px;
+  line-height: 2.5;
 }
 
 nav:not(#navigationBar) ul li:hover a {
@@ -188,6 +193,7 @@ main section.playlist-title-section .playlist-wrapper .popular-playlist {
   overflow: hidden;
   justify-content: space-between;
   margin: 10px 10px 10px 10px;
+  width: 100%;
 }
 
 main section.playlist-title-section .popular-playlist span,
@@ -208,6 +214,7 @@ main section.playlist-body-section {
   padding: 0px 20px 20px;
   background-color: #121212;
   min-height: 100px;
+  min-width: 480px;
 }
 
 main section.playlist-body-section > div {
@@ -220,11 +227,16 @@ main section.playlist-body-section h1 {
   margin-left: 10px;
 }
 
+main section.playlist-body-section h1:not(:first-child) {
+  margin-top: 20px;
+}
+
 main section.playlist-body-section .other-playlist-wrapper {
   margin-top: 10px;
   display: flex;
-  overflow-x: scroll;
-  width: 83vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
 }
 
 main section.playlist-body-section .other-playlist-wrapper .other-playlist {
@@ -428,5 +440,16 @@ footer {
 
   aside .player-tools {
     display: flex;
+  }
+
+  main section.playlist-title-section .playlist-wrapper .popular-playlist {
+    width: auto;
+  }
+
+  main section.playlist-body-section .other-playlist-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    width: 83vw;
   }
 }
