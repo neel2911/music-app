@@ -5,7 +5,7 @@ body{
 
 .login-container{
     display: grid;
-    grid-template-rows: 60px 50px 70px 50px 54px 452px; 
+    grid-template-rows: 60px 50px 70px 50px 54px 516px; 
     background-color: white;
     align-items: center;
     
@@ -52,50 +52,63 @@ input:hover
 
 /*Applying colour to Fb, Apple and Google */
 .social-btn{
+   
     color: white;
     width: 450px;
     height: 50px;
     border-radius: 500px;
     line-height: 1;
-   border-width: 0;
-   letter-spacing: 2px;
-   white-space: normal;
-   margin: auto;
-   display: inline-block;
-  padding: 8px;
-   text-align: center;
-   text-transform: uppercase;  
-   font-size: 16px;
-   font-weight: 600;
-   text-decoration: none;
+    border-width: 0;
+    letter-spacing: 2px;
+    white-space: normal;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;  
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
     
 }
 .fbbtn{
+    display: flex;
+    flex-direction: row;
+    padding: 13px 81px 15px 87px;
     background-color:#3b5998; 
 }
 .fbbtn:hover{
     opacity:0.85;
 }
 .fbbtn img{
-    width: 19px;
-    height: 24px;
+    display: flex;
+    flex-direction: row;
+    width: 47px;
+    height: 17px;
     border-radius: 10px;  
-    padding-top: 7px;
+    
+   
 }
 .applebtn{
+    display: flex;
+    flex-direction: row;
+    padding: 13px 81px 15px 87px;
     background-color:black;
+   
 }
 .applebtn:hover{
     opacity: 0.85;
 }
 .applebtn img{
-    width: 19px;
-    height: 24px;
+    width: 47px;
+    height: 17px;
     border-radius: 10px;
     
 }
 
 .googlebtn{
+    display: flex;
+    flex-direction: row;
+    padding: 13px 81px 15px 87px;
     background-color:transparent;
     border: 2px solid  #616467;
     color: #616467;   
@@ -105,10 +118,10 @@ input:hover
     color: white;
 }
 .googlebtn img{
-    width: 19px;
-    height: 24px;
+    width: 47px;
+    height: 17px;
     border-radius: 10px; 
-    padding-top: 7px;  
+    
     
 }
 
@@ -147,10 +160,10 @@ input:hover
      text-transform: uppercase;
  }
  .text{
-   color:#616467;
-   padding: 10px 512px;
-   font-weight: 600;
-   font-size: 16px;
+     color:#616467;
+     padding: 10px 512px;
+     font-weight: 600;
+     font-size: 16px;
  }
  .text:hover{
      color: #4caf50;
@@ -158,8 +171,8 @@ input:hover
  }
  
   table{     
-width:auto;
-padding-top: 45px;
+    width:auto;
+    padding-top: 45px;
   }
   td{
     border-spacing: 0px;
@@ -196,7 +209,7 @@ padding-top: 45px;
      color: black;
      font-weight: 700;
      text-align: center;
-   padding: 55px 0px 12px;
+     padding: 55px 0px 12px;
  }
  /* Responsive  */
 

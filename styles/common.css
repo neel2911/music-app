@@ -8,7 +8,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: grey;
+  background-color: #000;
   color: #fff;
 }
 
@@ -200,6 +200,15 @@ footer {
     grid-area: header;
   }
 
+  #brand-section {
+    display: flex;
+    align-items: center;
+  }
+
+  #header-menu {
+    display: flex;
+    align-items: center;
+  }
   #header-menu ul {
     display: flex;
   }

@@ -1,0 +1,432 @@
+#wrapper {
+  display: grid;
+  grid-template:
+    "header"
+    "main"
+    "aside"
+    "footer";
+}
+
+.btn {
+  padding: 17px 48px;
+  border: none;
+  border-radius: 500px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.04);
+}
+
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  /* background: transparent; */
+}
+
+header .tool-btn {
+  background-color: #0c1434;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-right: 20px;
+}
+
+header .tool-btn span {
+  display: inline-block;
+  background-color: #282828;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  padding: 4px;
+  height: 30px;
+  width: 30px;
+}
+
+header .tool-btn span img {
+  height: 20px;
+}
+
+.search-input {
+  width: 300px;
+  height: 40px;
+  margin: 8px 0px 8px 20px;
+  border-radius: 500px;
+  padding: 2px 10px 2px 40px;
+  border: 1px solid #1c1d1f70;
+  position: relative;
+  display: inline-block;
+  background-color: #ffffff;
+}
+
+.search-input input {
+  font-size: 14px;
+  outline: none;
+  height: 98%;
+  width: 100%;
+  border: none;
+  padding: 0px;
+}
+
+.search-input:before {
+  content: " ";
+  background-image: url(/assets/icons/search.svg); /* Ref: https://fonts.google.com/icons */
+  position: absolute;
+  background-size: 24px 24px;
+  top: 8px;
+  width: 24px;
+  height: 24px;
+  left: 10px;
+  opacity: 0.7;
+  background-repeat: no-repeat;
+}
+
+header .upgrade {
+  background-color: #282828;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 9px 15px;
+  margin: 0 20px;
+  border: 1px solid #ffffff;
+}
+
+header .user-profile {
+  background-color: #282828;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 1px 15px 1px 0px;
+  margin-right: 20px;
+  min-width: 150px;
+}
+
+header .user-profile span {
+  display: inline-block;
+  background-color: #535353;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+header .user-profile span img {
+  height: 18px;
+}
+
+header .tool-btn,
+header .search-input,
+header .upgrade,
+header .user-profile {
+  display: none;
+}
+
+header .brand-logo {
+  display: inline-block;
+}
+
+nav:not(#navigationBar) {
+  display: none;
+}
+
+nav:not(#navigationBar) {
+  background-color: #000000;
+}
+
+nav:not(#navigationBar) > div {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: left;
+  padding: 0px 10px;
+}
+
+nav:not(#navigationBar) ul li a {
+  color: #ffffff;
+}
+
+nav:not(#navigationBar) ul li:hover a {
+  color: #000000;
+}
+
+nav:not(#navigationBar) ul li a.menu-active {
+  color: #1ed760;
+}
+
+nav#navigationBar {
+  display: block;
+}
+
+main section.playlist-title-section {
+  background-image: linear-gradient(#d0d0c8 0, #121212 100%);
+  padding: 80px 20px 20px;
+  min-height: 100px;
+}
+
+main section.playlist-title-section h1 {
+  margin-left: 10px;
+}
+
+main section.playlist-title-section .playlist-wrapper {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main section.playlist-title-section .playlist-wrapper .popular-playlist {
+  background-color: #ffffff1a;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  justify-content: space-between;
+  margin: 10px 10px 10px 10px;
+}
+
+main section.playlist-title-section .popular-playlist span,
+main section.playlist-title-section .popular-playlist > img ~ img {
+  margin-left: 30px;
+}
+
+main section.playlist-title-section .popular-playlist > img ~ img {
+  transition: all 0.2s;
+  opacity: 0;
+}
+
+main section.playlist-title-section .popular-playlist:hover > img ~ img {
+  opacity: 1;
+}
+
+main section.playlist-body-section {
+  padding: 0px 20px 20px;
+  background-color: #121212;
+  min-height: 100px;
+}
+
+main section.playlist-body-section > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main section.playlist-body-section h1 {
+  margin-left: 10px;
+}
+
+main section.playlist-body-section .other-playlist-wrapper {
+  margin-top: 10px;
+  display: flex;
+  overflow-x: scroll;
+  width: 83vw;
+}
+
+main section.playlist-body-section .other-playlist-wrapper .other-playlist {
+  background-color: #181818;
+  padding: 16px;
+  border-radius: 5px;
+  min-width: 200px;
+  margin: 10px;
+}
+
+main
+  section.playlist-body-section
+  .other-playlist-wrapper
+  .other-playlist
+  > div:not(.image-wrapper) {
+  margin-top: 20px;
+}
+
+main
+  section.playlist-body-section
+  .other-playlist-wrapper
+  .other-playlist
+  .image-wrapper {
+  position: relative;
+}
+
+main
+  section.playlist-body-section
+  .other-playlist-wrapper
+  .other-playlist
+  .image-wrapper::after {
+  content: "";
+  background-image: url(../assets/icons/play_main_circle.svg);
+  height: 50px;
+  width: 50px;
+  display: block;
+  bottom: 8px;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  position: absolute;
+  right: 8px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+main
+  section.playlist-body-section
+  .other-playlist-wrapper
+  .other-playlist:hover
+  .image-wrapper::after {
+  opacity: 1;
+}
+
+main section.playlist-body-section .other-playlist-wrapper .other-playlist div {
+  width: 150px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+main
+  section.playlist-body-section
+  .other-playlist-wrapper
+  .other-playlist
+  div
+  > div:first-child {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 24px;
+}
+
+main
+  section.playlist-body-section
+  .other-playlist-wrapper
+  .other-playlist
+  div
+  > div:last-child {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 16px;
+  color: #b3b3b3;
+}
+
+aside {
+  border-top: 1px solid #282828;
+  background-color: #121212;
+  min-height: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+}
+
+aside > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0px 20px;
+}
+
+aside .current-song {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside .current-song div span {
+  width: 100%;
+  display: inline-block;
+}
+
+aside .player {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+aside .player > div:not(.player-timeline) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+aside .player > div:not(.player-timeline) * {
+  margin: 0px 2px;
+}
+
+aside .player .play-button img {
+  height: 40px;
+}
+
+aside .player .player-timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #b3b3b3;
+}
+
+aside .player .player-timeline div {
+  margin: 0px 5px;
+}
+
+aside .player-tools {
+  display: none;
+}
+
+aside .player-tools span {
+  margin: 0px 7px;
+}
+
+footer {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  #wrapper {
+    display: grid;
+    grid-template:
+      "nav header"
+      "nav main"
+      "nav aside" / 200px;
+  }
+
+  header {
+    position: fixed;
+    left: 200px;
+    right: 0;
+    background-color: #121212;
+  }
+
+  header div:not(#header-menu) a {
+    display: none;
+  }
+
+  header .tool-btn,
+  header .search-input,
+  header .upgrade,
+  header .user-profile {
+    display: flex;
+  }
+
+  nav:not(#navigationBar) {
+    display: block;
+    position: fixed;
+    width: 200px !important;
+    left: 0;
+  }
+
+  nav#navigationBar {
+    display: none;
+  }
+
+  aside {
+    left: 200px;
+  }
+
+  aside .player-tools {
+    display: flex;
+  }
+}

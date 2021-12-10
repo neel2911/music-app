@@ -13,34 +13,63 @@
 <body>
     <div id="wrapper">
         <header>
-            <div>
-                <a href="./index.html">
+            <div id="brand-section">
+                <a href="/index.html" class="brand-logo">
                     <img src="./assets/logo/brand.png" height="45" />
                 </a>
+                <button class="btn tool-btn">
+                    <span>
+                        <img src="./assets/icons/chevron_left.svg" />
+                    </span>
+                </button>
+                <button class="btn tool-btn">
+                    <span>
+                        <img src="./assets/icons/chevron_right.svg" />
+                    </span>
+                </button>
+                <div class="search-input">
+                    <input type="text" placeholder="Search for any course" />
+                </div>
             </div>
             <div id="header-menu">
                 <a href="#" id="menu">
                     <img src="./assets/icons/menu.svg" />
                 </a>
-                <ul>
-                    <li>
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="./playlist.html">Playlist</a>
-                    </li>
-                    <li>
-                        <a href="./songs.html" class="menu-active">Songs</a>
-                    </li>
-                    <li>
-                        <a href="./profile.html">Profile</a>
-                    </li>
-                    <li>
-                        <a href="./login.html">Login</a>
-                    </li>
-                </ul>
+                <button class="btn upgrade">
+                    Upgrade
+                </button>
+                <button class="btn user-profile">
+                    <span>
+                        <img src="./assets/icons/person.svg" />
+                    </span>
+                    Neel Patel
+                </button>
             </div>
         </header>
+        <nav>
+            <div>
+                <a href="/index.html">
+                    <img src="./assets/logo/brand.png" height="45" />
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./playlist.html">Playlist</a>
+                </li>
+                <li class="active">
+                    <a href="./songs.html" class="menu-active">Songs</a>
+                </li>
+                <li>
+                    <a href="./profile.html">Profile</a>
+                </li>
+                <li>
+                    <a href="./login.html">Logout</a>
+                </li>
+            </ul>
+        </nav>
         <nav id="navigationBar">
             <a href="#" id="close_drawer">
                 <img src="./assets/icons/close.svg" />
@@ -59,14 +88,152 @@
                     <a href="./profile.html">Profile</a>
                 </li>
                 <li>
-                    <a href="./login.html">Login</a>
+                    <a href="./login.html">Logout</a>
                 </li>
             </ul>
         </nav>
         <main>
+            <section class="song-title-section">
+
+                <img src="assets/images/songs/main_icon.jpeg" height="200" />
+                <div class="playlist-text">
+                    <h2>Playlist</h2>
+                    <h1>Mood Booster</h1>
+                    <span>Get happy with today's dose of feel-good songs!</span>
+                    <div>
+                        <a href="#">Soundtube</a>
+                        <span>6,894,990 likes</span>
+                        <span>76 songs, 4 hr 2 min</span>
+                    </div>
+                </div>
+
+                <div class="playlist-action">
+                    <img src="assets/icons/favorite.svg" height="40">
+                    <img src="assets/icons/play_main_circle.svg" height="60">
+                    <!-- <img src="assets/icons/more.svg" height="30"> -->
+                </div>
+            </section>
+            <section class="song-body-section">
+                <div>
+                    <div>
+                        <img src="assets/icons/favorite.svg" height="40">
+                        <img src="assets/icons/more.svg" height="30">
+                    </div>
+                    <img src="assets/icons/play_main_circle.svg" height="60">
+
+                </div>
+                <table cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>TITLE</th>
+                            <th>ALBUM</th>
+                            <th>DATE ADDED</th>
+                            <th><img src="assets/icons/schedule.svg" /></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <img src="assets/logo/1.png" height="60" />
+                                <div>
+                                    <span>seeside_demo</span>
+                                    <span>SEB</span>
+                                </div>
+                            </td>
+                            <td>Summer of love</td>
+                            <td>2 days ago</td>
+                            <td>3.04</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <img src="assets/logo/1.png" height="60" />
+                                <div>
+                                    <span>seeside_demo</span>
+                                    <span>SEB</span>
+                                </div>
+                            </td>
+                            <td>Song name</td>
+                            <td>Summer of love</td>
+                            <td>1 day ago</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <img src="assets/logo/1.png" height="60" />
+                                <div>
+                                    <span>seeside_demo</span>
+                                    <span>SEB</span>
+                                </div>
+                            </td>
+                            <td>Song name</td>
+                            <td>Summer of love</td>
+                            <td>1 day ago</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <img src="assets/logo/1.png" height="60" />
+                                <div>
+                                    <span>seeside_demo</span>
+                                    <span>SEB</span>
+                                </div>
+                            </td>
+                            <td>Song name</td>
+                            <td>Summer of love</td>
+                            <td>1 day ago</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <img src="assets/logo/1.png" height="60" />
+                                <div>
+                                    <span>seeside_demo</span>
+                                    <span>SEB</span>
+                                </div>
+                            </td>
+                            <td>Song name</td>
+                            <td>Summer of love</td>
+                            <td>1 day ago</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </main>
         <aside>
-            Aside
+            <div>
+                <div class="current-song">
+                    <img src="assets/logo/1.png" height="70" />
+                    <div>
+                        <span>seeside_demo</span>
+                        <span>SEB</span>
+                    </div>
+                </div>
+                <div class="player">
+                    <div>
+                        <span><img src="assets/icons/shuffle.svg" /></span>
+                        <span><img src="assets/icons/skip_previous.svg" /></span>
+                        <span class="play-button"> <img src="assets/icons/play_circle.svg" /></span>
+                        <span><img src="assets/icons/skip_previous.svg" /></span>
+                        <span><img src="assets/icons/loop.svg" /></span>
+                    </div>
+                    <div class="player-timeline">
+                        <div>0.54</div>
+                        <div>
+                            <progress max="100" value="70"> 70% </progress>
+                        </div>
+                        <div>2.12</div>
+                    </div>
+                </div>
+                <div class="player-tools">
+                    <span><img src="assets/icons/keyboard.svg" /></span>
+                    <span><img src="assets/icons/playlist_play.svg" /></span>
+                    <span><img src="assets/icons/devices.svg" /></span>
+                    <span><img src="assets/icons/volume_up.svg" /></span>
+                </div>
+            </div>
         </aside>
         <footer>
             <div id="site-links">
