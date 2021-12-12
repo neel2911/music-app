@@ -8,6 +8,7 @@ body{
     grid-template-rows: 60px 50px 70px 50px 54px 516px; 
     background-color: white;
     align-items: center;
+    width: 100%;
     
 }
 h2{
@@ -193,7 +194,7 @@ input:hover
 
  .s-btn{
     margin-left: 516px;
-    padding: 16px;
+    padding: 16px -14px;
  }
  .l-btn{
      
@@ -213,6 +214,10 @@ input:hover
  }
  /* Responsive  */
 
- @media screen and (max-width:650px) {
+ @media only screen and (min-width: 600px) {
+   .h2{
+       padding:30px
+       ;
+   }
      
  }
