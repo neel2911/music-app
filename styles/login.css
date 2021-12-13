@@ -19,7 +19,7 @@ body {
   align-items: center;
   width: 100%; */
   display: block;
-  width: 50%;
+  width: 0;
   margin: 0 auto;
   min-width: 480px;
 }
@@ -233,11 +233,11 @@ h3 {
 }
 
 @media only screen and (min-width: 600px) {
-  .login-container .form-field {
+  /* .login-container .form-field {
     width: 61%;
   }
 
   .login-container .form-action {
     width: 61%;
-  }
+  } */
 }
