@@ -7,28 +7,42 @@
     "footer";
 }
 
+.container{
+  padding: 50px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.seccontainer{
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
 .sec-class
 {
   width: 100%;
-  margin: 0 auto;
-  
+  margin: 0 auto; 
   align-items: center;
-  padding: 50px;  
+  padding: 10px;  
 }
 
 .sec-class p{
   font-size: 20px;
   font-weight: 400;
+  padding-left: 10px;
 }
 
 .sec-class h1{
   font-size: 54px;
   font-weight: 600;
+  padding: 10px;
 }
 
 .sec-class h2{
   font-size: 26px;
   font-weight: 400;
+  padding: 10;
 }
 
 .sec-class button{
@@ -42,11 +56,12 @@
   align-items: center;
   text-align: center;
   transform: scale(1.04);
+  text-transform: uppercase;
+  box-sizing:border-box;
 }
 
 #btn1{
   background-color: #202f72;
-
 }
 #btn2{
   background-color: #2de26d;
