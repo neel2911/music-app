@@ -37,6 +37,7 @@ h2 {
   font-size: 16px;
   font-weight: 600;
   padding-top: 20px;
+  margin-bottom: 8px;
 }
 /*Style for inputs and buttons*/
 .label {
@@ -57,6 +58,7 @@ input {
   font-size: 18px;
   line-height: 20px;
   text-decoration: none;
+  margin-bottom: 10px;
 }
 input:hover {
   opacity: 1;
@@ -72,7 +74,7 @@ input:hover {
   border-width: 0;
   letter-spacing: 2px;
   white-space: normal;
-  margin: auto;
+  margin: 8px;
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
@@ -165,6 +167,7 @@ input[type="submit"]:hover {
   color: #616467;
   font-weight: 600;
   font-size: 16px;
+  margin-bottom: 15px;
 }
 .text:hover {
   color: #4caf50;
@@ -194,6 +197,7 @@ h3 {
   color: black;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 8px;
 }
 /* Responsive  */
 
