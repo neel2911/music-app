@@ -385,9 +385,17 @@ aside .current-song {
   align-items: center;
 }
 
+aside .current-song div {
+  margin-left: 20px;
+}
+
 aside .current-song div span {
   width: 100%;
   display: inline-block;
+}
+
+aside .current-song div span:last-child {
+  font-size: 12px;
 }
 
 aside .player {
