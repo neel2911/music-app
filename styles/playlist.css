@@ -27,6 +27,7 @@ header {
   position: fixed;
   left: 0;
   right: 0;
+  z-index: 1;
   /* background: transparent; */
 }
 
@@ -450,6 +451,7 @@ footer {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
-    width: 83vw;
+    max-width: 83vw;
+    justify-content: left;
   }
 }
