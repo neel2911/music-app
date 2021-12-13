@@ -95,6 +95,7 @@ nav ul li {
 }
 
 .active,
+nav ul li.active,
 nav ul li:hover {
   background: #f0f0f0;
 }
@@ -102,6 +103,11 @@ nav ul li:hover {
 nav ul li a {
   text-decoration: none;
   color: #000;
+  width: 100%;
+  height: 40px;
+  padding-left: 20px;
+  line-height: 2.5;
+  display: inline-block;
 }
 
 main {
