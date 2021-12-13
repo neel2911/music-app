@@ -169,6 +169,10 @@ nav#navigationBar {
   display: block;
 }
 
+main {
+  overflow: hidden;
+}
+
 main section.playlist-title-section {
   background-image: linear-gradient(#d0d0c8 0, #121212 100%);
   padding: 80px 20px 20px;
