@@ -233,6 +233,9 @@ h3 {
 }
 
 @media only screen and (min-width: 600px) {
+  nav {
+    display: none;
+  }
   /* .login-container .form-field {
     width: 61%;
   }
