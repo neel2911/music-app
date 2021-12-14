@@ -12,16 +12,17 @@
 
 <body>
     <div id="wrapper">
-        <header role="heading">
+        <header role="banner">
             <div>
                 <a href="./index.html">
-                    <img src="./assets/logo/brand.png" height="45" />
+                    <img src="./assets/logo/brand.png" height="45" alt="brand logo" />
                     <!-- Ref: Logo is created by us we have added coraldraw file for the reference -->
                 </a>
             </div>
             <div id="header-menu">
                 <a href="#" id="menu">
-                    <img src="./assets/icons/menu.svg" />
+                    <img src="./assets/icons/menu.svg" alt="mobile menu" />
+                    <!--Ref: https://fonts.google.com/icons-->
                 </a>
                 <ul>
                     <li>
@@ -44,7 +45,8 @@
         </header>
         <nav id="navigationBar" role="navigation">
             <a href="#" id="close_drawer">
-                <img src="./assets/icons/close.svg" />
+                <img src="./assets/icons/close.svg" alt="close menu" />
+                <!--Ref: https://fonts.google.com/icons-->
             </a>
             <ul>
                 <li class="active">
@@ -71,7 +73,8 @@
                     <h1>Get 3 months of Premium for free</h1>
                     <h2>Enjoy ad-free music listening, offline playback, and more. Cancel anytime.</h2>
                     <button type="button" id="btn1">Get 3 months free</button>
-                    <p id="p-id">Individual plan only. $9.99/month after. Terms and conditions apply. Open only to
+                    <p class="description">Individual plan only. $9.99/month after. Terms and conditions apply. Open
+                        only to
                         users who haven't already tried Premium. Offer ends 31 December 2021.</p>
                 </div>
                 <div class="image-container"></div>
@@ -83,7 +86,7 @@
                     <h1>2021 Wrapped is ready.</h1>
                     <h2>But it’s only available in the Soundtube app. Download it now to discover more.</h2>
                     <button type="button" id="btn2">Download Soundtube</button>
-                    <p id="p-id">Listen to 2021 highlights here.</p>
+                    <p class="description">Listen to 2021 highlights here.</p>
                 </div>
                 <div class="image-container"></div>
             </section>
@@ -123,7 +126,7 @@
                 </dl>
             </div>
             <div id="site-policy">
-                <section id="other-links">
+                <div id="other-links">
                     <ul>
                         <li><a href="#">Legal</a></li>
                         <li><a href="#">Privacy Center</a></li>
@@ -131,22 +134,23 @@
                         <li><a href="#">Cookies</a></li>
                         <li><a href="#">About ads</a></li>
                     </ul>
-                </section>
-                <section>
+                </div>
+                <div>
                     <ul>
                         <li>
-                            <img src="./assets/icons/location.svg" />
+                            <img src="./assets/icons/location.svg" alt="company location" />
+                            <!--Ref: https://fonts.google.com/icons-->
                             Canada
                         </li>
                         <li>
                             &copy; 2021 Soundtube
                         </li>
                     </ul>
-                </section>
+                </div>
             </div>
         </footer>
     </div>
-    <script type="text/javascript" src="scripts/drawer.js"></script>
+    <script src="scripts/drawer.js"></script>
 </body>
 
 </html>

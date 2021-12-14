@@ -187,16 +187,16 @@ footer {
   text-decoration: underline;
 }
 
-#site-policy > section:not(#other-links) {
+#site-policy > div:not(#other-links) {
   text-align: right;
 }
 
-#site-policy > section:not(#other-links) ul li {
+#site-policy > div:not(#other-links) ul li {
   text-align: left;
   margin-top: 10px;
 }
 
-#site-policy > section:not(#other-links) ul li img {
+#site-policy > div:not(#other-links) ul li img {
   height: 12px;
   margin-right: 7px;
 }
@@ -272,7 +272,7 @@ footer {
     justify-content: space-between;
   }
 
-  #site-policy > section:not(#other-links) ul li {
+  #site-policy > div:not(#other-links) ul li {
     display: flex;
     justify-content: right;
     text-align: center;
