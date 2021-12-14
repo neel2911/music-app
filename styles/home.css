@@ -109,8 +109,7 @@
 }
 
 #sec2-id .image-container {
-  background-image: url("../assets/images/home/sec2.svg");  /*--Ref: https://fonts.google.com/icons*/
-  background-position: -130px -100px;
+  background-image: url("../assets/images/home/sec2.svg");  /*--Ref: https://content-tooling.spotifycdn.com/images/b236bf87-bfd5-4bcb-b51a-77881073039c_lie_circles.svg background-position: -130px -100px;
   background-size: 262%;
   height: 500px;
   width: 500px;
@@ -136,7 +135,7 @@
 }
 
 #sec3-id .image-container {
-  background-image: url("../assets/images/home/sec3.svg"); /*--Ref: https://fonts.google.com/icons*/
+  background-image: url("../assets/images/home/sec3.svg"); /*--Ref: https://content-tooling.spotifycdn.com/images/b236bf87-bfd5-4bcb-b51a-77881073039c_lie_circles.svg
   background-position: -612px 500px;
   background-size: 230%;
   height: 500px;
