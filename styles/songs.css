@@ -173,7 +173,7 @@ main {
   overflow: hidden;
 }
 
-main section.song-title-section {
+main div.song-title-section {
   background-image: linear-gradient(#2840b0 0, #121212 100%);
   padding: 80px 20px 20px;
   min-height: 100px;
@@ -183,22 +183,22 @@ main section.song-title-section {
   flex-direction: column;
 }
 
-main section.song-title-section > img {
+main div.song-title-section > img {
   box-shadow: 0 4px 60px #00000080;
 }
-main section.song-title-section .playlist-text {
+main div.song-title-section .playlist-text {
   padding: 8px 8px 8px 20px;
   flex: 1;
 }
 
-main section.song-title-section .playlist-text h2 {
+main div.song-title-section .playlist-text h2 {
   display: none;
   font-size: 12px;
   font-weight: 700;
   padding-left: 5px;
 }
 
-main section.song-title-section .playlist-text h1 {
+main div.song-title-section .playlist-text h1 {
   display: none;
   font-size: 96px;
   line-height: 96px;
@@ -206,7 +206,7 @@ main section.song-title-section .playlist-text h1 {
   margin-top: 10px;
 }
 
-main section.song-title-section .playlist-text > span {
+main div.song-title-section .playlist-text > span {
   display: inline-block;
   font-size: 14px;
   font-weight: 400;
@@ -215,7 +215,7 @@ main section.song-title-section .playlist-text > span {
   padding-left: 5px;
 }
 
-main section.song-title-section .playlist-text > div {
+main div.song-title-section .playlist-text > div {
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
@@ -223,42 +223,42 @@ main section.song-title-section .playlist-text > div {
   padding-left: 5px;
 }
 
-main section.song-title-section .playlist-text > div * {
+main div.song-title-section .playlist-text > div * {
   padding: 0px 5px 0px 5px;
 }
 
-main section.song-title-section .playlist-text > div a {
+main div.song-title-section .playlist-text > div a {
   font-weight: 600;
   color: #ffffff;
   text-decoration: none;
   padding: 0;
 }
 
-main section.song-title-section .playlist-text > div a:hover {
+main div.song-title-section .playlist-text > div a:hover {
   font-weight: 600;
   color: #ffffff;
   text-decoration: underline;
 }
 
-main section.song-title-section .playlist-text > div *:not(:first-child) {
+main div.song-title-section .playlist-text > div *:not(:first-child) {
   border-left: 1px solid #ffffff;
 }
 
-main section.song-title-section .playlist-action {
+main div.song-title-section .playlist-action {
   display: none;
   flex-direction: column;
   justify-content: space-between;
   height: 200px;
 }
 
-main section.song-body-section {
+main div.song-body-section {
   padding: 0px 20px 100px;
   background-color: #121212;
   min-height: 100px;
   overflow-x: scroll;
 }
 
-main section.song-body-section > div {
+main div.song-body-section > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -267,41 +267,42 @@ main section.song-body-section > div {
   right: 0;
 }
 
-main section.song-body-section > div > div > * {
+main div.song-body-section > div > div > * {
   margin-right: 25px;
 }
 
-main section.song-body-section table {
+main div.song-body-section table {
+  border-collapse: collapse;
   width: 100%;
 }
 
-main section.song-body-section table tbody::before {
+main div.song-body-section table tbody::before {
   content: "";
   line-height: 1px;
   display: inline-block;
 }
 
-main section.song-body-section table tbody tr {
+main div.song-body-section table tbody tr {
   border-radius: 5px;
   overflow: hidden;
   font-size: 13px;
 }
 
-main section.song-body-section table tbody tr:hover {
+main div.song-body-section table tbody tr:hover {
   background-color: #ffffff1a;
 }
-main section.song-body-section table tbody tr:hover * {
+main div.song-body-section table tbody tr:hover * {
   color: #ffffff;
 }
 
-main section.song-body-section table th,
-main section.song-body-section table td {
+main div.song-body-section table th,
+main div.song-body-section table td {
   text-align: left;
   min-width: 200px;
   color: #b3b3b3;
 }
 
-main section.song-body-section table th {
+main div.song-body-section table th {
   border-bottom: 1px solid #ffffff1a;
   padding: 10px 20px;
   font-size: 12px;
@@ -309,31 +310,31 @@ main section.song-body-section table th {
   letter-spacing: 1.2px;
 }
 
-main section.song-body-section table td {
+main div.song-body-section table td {
   text-align: left;
   min-width: 200px;
   padding: 5px 20px;
 }
 
-main section.song-body-section table th img {
+main div.song-body-section table th img {
   height: 22px;
 }
 
-main section.song-body-section table th:nth-child(1),
-main section.song-body-section table td:nth-child(1) {
+main div.song-body-section table th:nth-child(1),
+main div.song-body-section table td:nth-child(1) {
   min-width: 20px;
 }
 
-main section.song-body-section table th:nth-child(2),
-main section.song-body-section table td:nth-child(2) {
+main div.song-body-section table th:nth-child(2),
+main div.song-body-section table td:nth-child(2) {
   min-width: 220px;
 }
-main section.song-body-section table td:nth-child(2) div {
+main div.song-body-section table td:nth-child(2) div {
   width: 100%;
   margin-left: 10px;
   font-size: 12px;
 }
-main section.song-body-section table td:nth-child(2) div span:first-child {
+main div.song-body-section table td:nth-child(2) div span:first-child {
   color: #ffffff;
   font-size: 16px;
   font-weight: 400;
@@ -341,26 +342,26 @@ main section.song-body-section table td:nth-child(2) div span:first-child {
   line-height: 24px;
 }
 
-main section.song-body-section table td:nth-child(2) {
+main div.song-body-section table td:nth-child(2) {
   display: flex;
   align-items: center;
 }
 
-main section.song-body-section table td:nth-child(2) > div span {
+main div.song-body-section table td:nth-child(2) > div span {
   width: 100%;
   display: inline-block;
 }
 
-main section.song-body-section table th:nth-child(3),
-main section.song-body-section table td:nth-child(3) {
+main div.song-body-section table th:nth-child(3),
+main div.song-body-section table td:nth-child(3) {
   min-width: 200px;
 }
-main section.song-body-section table th:nth-child(4),
-main section.song-body-section table td:nth-child(4) {
+main div.song-body-section table th:nth-child(4),
+main div.song-body-section table td:nth-child(4) {
   min-width: 200px;
 }
-main section.song-body-section table th:nth-child(5),
-main section.song-body-section table td:nth-child(5) {
+main div.song-body-section table th:nth-child(5),
+main div.song-body-section table td:nth-child(5) {
   text-align: right;
 }
 
@@ -484,25 +485,25 @@ footer {
     display: none;
   }
 
-  main section.song-title-section {
+  main div.song-title-section {
     flex-direction: row;
   }
 
-  main section.song-title-section .playlist-text h2,
-  main section.song-title-section .playlist-text h1 {
+  main div.song-title-section .playlist-text h2,
+  main div.song-title-section .playlist-text h1 {
     display: block;
   }
 
-  main section.song-title-section .playlist-action {
+  main div.song-title-section .playlist-action {
     display: flex;
   }
 
-  main section.song-body-section > div {
+  main div.song-body-section > div {
     display: none;
   }
 
-  main section.song-body-section table th:nth-child(2),
-  main section.song-body-section table td:nth-child(2) {
+  main div.song-body-section table th:nth-child(2),
+  main div.song-body-section table td:nth-child(2) {
     min-width: 500px;
   }
 

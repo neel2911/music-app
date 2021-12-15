@@ -118,6 +118,7 @@ article img {
   width: 100%;
   font-size: 16px;
   margin-bottom: 30px;
+  border-collapse: collapse;
 }
 
 .profile-info section table tr th {
