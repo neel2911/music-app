@@ -67,8 +67,8 @@
 }
 
 #sec1-id {
-  background-color: #96f0b6;
-  color: #202f72;
+  background-color: #202f72;
+  color: #f0f0f0;
 }
 
 #sec1-id .container {
@@ -86,11 +86,11 @@
 }
 
 #sec1-id .image-container {
-  background-image: url("../assets/images/home/sec1.png"); /*Ref: https://i.scdn.co/image/ab671c3d0000f4303192d3851d53bb53a93ddfc7*/
+  background-image: url("../assets/images/home/section1.png"); /*Ref: https://i.scdn.co/image/ab671c3d0000f4303192d3851d53bb53a93ddfc7*/
 }
 
 #sec2-id {
-  background-color: #f46ebe;
+  background-color: #f0f0f0;
   color: #202f72;
 }
 
@@ -117,7 +117,7 @@
 }
 
 #sec3-id {
-  background-color: #2941ab;
+  background-color: #202f72;
   /* padding-left: 70px; */
 }
 
