@@ -81,8 +81,8 @@
 }
 
 #btn1 {
-  background-color: #202f72;
-  color: #96f0b6;
+  background-color: #2de26d;
+  color: #2941ab;
 }
 
 #sec1-id .image-container {
@@ -98,14 +98,15 @@
   /* width: 700px; */
 }
 
-#sec2-id .container * {
+#sec2-id .container *:not(#btn2) {
   margin-top: 20px;
   color: #202f72;
 }
 
 #btn2 {
-  background-color: #2de26d;
-  color: #2941ab;
+  margin-top: 20px;
+  background-color: #2941ab;
+  color: #2de26d;
 }
 
 #sec2-id .image-container {
